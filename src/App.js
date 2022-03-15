@@ -1,5 +1,5 @@
 import './App.css';
-import Pokemon from "./Components/Pokemon";
+import PokemonList from './Components/PokemonList';
 
 function App() {
   return (
@@ -7,9 +7,8 @@ function App() {
       <h1 className="text-3xl font-bold underline">
       Pokedex
       </h1>
-      <Pokemon />
+      <PokemonList />
     </div>
-    
 
   );
 }
