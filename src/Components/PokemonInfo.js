@@ -1,22 +1,22 @@
 import React from "react"
 
-const PokemonInfo = (props) => {
+const PokemonInfo = ({name, url}) => {
     
     const [PokemonInfo, setPokemon] = React.useState(null);
 
     React.useEffect(() => {
-      fetch('https://pokeapi.co/api/v2/pokemon/'+ props.name)
+      fetch(url)
       .then((response)  => response.json())
       .then((json)  =>   setPokemon(json)); 
     
-    }, [props.name]) 
+    }, [name]) 
 
   return (
     <div>
         {PokemonInfo && (
             <div>
-                <h1>{props.name}</h1>
-                <img src={PokemonInfo.sprites.front_default} alt={props.name} />
+                <h1>{name}</h1>
+                <img src={PokemonInfo.sprites.front_default} alt={name} />
                 <p>{PokemonInfo.types[0].type.name}</p>
             </div>
         )}    
