@@ -1,5 +1,5 @@
 $main-color: antiquewhite;
-$main-background-color: red;
+$main-background-color: #E8302F;
 
 @font-face {
     font-family: 'Pokemon Solid';
@@ -15,6 +15,7 @@ body{
 .app-container {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 .app-header {
@@ -22,7 +23,8 @@ body{
     text-align: center;
     margin: auto;
     vertical-align: middle;
-    background-color: $main-background-color;
+    background: $main-background-color;
+    background: linear-gradient(0deg, rgba(40,40,40,1) 0%, rgba($main-background-color,1) 50%);
     .title{
         margin: 0.5rem;
     }
