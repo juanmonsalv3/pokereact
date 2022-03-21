@@ -1,26 +1,26 @@
-import React from 'react'
+import React from 'react';
+import PokemonDetails from './PokemonDetails';
+import PokemonPicture from './PokemonPicture';
 
-const SelectedPokemon = () => {
-
+const SelectedPokemon = ({ pokemonName = 'ditto' }) => {
   const [pokemon, setPokemon] = React.useState(null);
 
-    React.useEffect(() => {
-      fetch('https://pokeapi.co/api/v2/pokemon/ditto')
-      .then((response)  => response.json())
-      .then((json)  =>   setPokemon(json)); 
-    
-    }, []) 
+  React.useEffect(() => {
+    fetch(`https://pokeapi.co/api/v2/pokemon/${pokemonName}`)
+      .then((response) => response.json())
+      .then((json) => setPokemon(json));
+  }, [pokemonName]);
 
   return (
-    <div>
+    <div className='selected-pokemon-container'>
       {pokemon && (
-            <div>
-                <h1>{pokemon.forms[0].name}</h1>
-                <img src={pokemon.sprites.front_default} alt={pokemon.forms.name} />
-            </div>
-        )} 
+        <div>
+          <PokemonPicture pokemon={pokemon} />
+          <PokemonDetails pokemon={pokemon} />
+        </div>
+      )}
     </div>
-  )
-}
+  );
+};
 
-export default SelectedPokemon
+export default SelectedPokemon;

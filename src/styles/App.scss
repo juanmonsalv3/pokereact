@@ -11,8 +11,31 @@ body{
     background-color: $main-color;
 }
 
+.app-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.app-header {
+    width: 100vw;
+    text-align: center;
+    margin:auto;
+    vertical-align: middle;
+}
+
+.selected-pokemon-container {
+    width: 400px;
+}
+
+.pokemon-list-container {
+    width: calc(100% - 400px);
+}
+
 .title {
     font-family: 'Pokemon Solid';
     font-size: 150%;
     color: rgb(238, 42, 42);
+    -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: red;
 }
