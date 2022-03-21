@@ -9,7 +9,7 @@ const PokemonInfo = ({name, url}) => {
       .then((response)  => response.json())
       .then((json)  =>   setPokemon(json)); 
     
-    }, [name]) 
+    }, [name, url]) 
 
   return (
     <div>

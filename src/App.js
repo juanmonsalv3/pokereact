@@ -1,5 +1,5 @@
-import './Sass/App.scss';
-import PokemonList from './Components/PokemonList';
+import './styles/App.scss';
+import PokemonList from './components/PokemonList';
 
 function App() {
   return (
