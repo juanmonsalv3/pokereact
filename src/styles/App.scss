@@ -1,5 +1,49 @@
 $main-color: antiquewhite;
+$main-background-color: #E8302F;
+
+@font-face {
+    font-family: 'Pokemon Solid';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Pokemon Solid'), url('https://fonts.cdnfonts.com/s/17890/Pokemon Solid.woff') format('woff');
+}
 
 body{
     background-color: $main-color;
+}
+
+.app-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.app-header {
+    width: 100vw;
+    text-align: center;
+    margin: auto;
+    vertical-align: middle;
+    background: $main-background-color;
+    background: linear-gradient(0deg, rgba(40,40,40,1) 0%, rgba($main-background-color,1) 50%);
+    .title{
+        margin: 0.5rem;
+    }
+}
+
+.selected-pokemon-container {
+    width: 400px;
+}
+
+.pokemon-list-container {
+    width: calc(100% - 400px);
+}
+
+.title {
+    font-family: 'Pokemon Solid';
+    font-size: 2rem;
+    font-weight: bold;
+    color: rgb(238, 42, 42);
+    -webkit-text-fill-color: #FFCB03; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #3663AC;
 }
