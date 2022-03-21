@@ -1,4 +1,5 @@
 $main-color: antiquewhite;
+$main-background-color: red;
 
 @font-face {
     font-family: 'Pokemon Solid';
@@ -19,8 +20,12 @@ body{
 .app-header {
     width: 100vw;
     text-align: center;
-    margin:auto;
+    margin: auto;
     vertical-align: middle;
+    background-color: $main-background-color;
+    .title{
+        margin: 0.5rem;
+    }
 }
 
 .selected-pokemon-container {
@@ -33,9 +38,10 @@ body{
 
 .title {
     font-family: 'Pokemon Solid';
-    font-size: 150%;
+    font-size: 2rem;
+    font-weight: bold;
     color: rgb(238, 42, 42);
-    -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+    -webkit-text-fill-color: #FFCB03; /* Will override color (regardless of order) */
     -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: red;
+    -webkit-text-stroke-color: #3663AC;
 }
