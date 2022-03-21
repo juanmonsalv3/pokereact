@@ -1,5 +1,18 @@
 $main-color: antiquewhite;
 
+@font-face {
+    font-family: 'Pokemon Solid';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Pokemon Solid'), url('https://fonts.cdnfonts.com/s/17890/Pokemon Solid.woff') format('woff');
+}
+
 body{
     background-color: $main-color;
+}
+
+.title {
+    font-family: 'Pokemon Solid';
+    font-size: 150%;
+    color: rgb(238, 42, 42);
 }
