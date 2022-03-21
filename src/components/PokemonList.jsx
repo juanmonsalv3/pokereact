@@ -1,13 +1,17 @@
 import React from 'react';
 import PokemonInfo from './PokemonInfo';
 
+import { get } from '../api';
+
 const PokemonList = () => {
   const [pokemons, setPokemon] = React.useState([]);
 
   React.useEffect(() => {
-    fetch('https://pokeapi.co/api/v2/pokemon?offset=0&limit=10')
-      .then((response) => response.json())
-      .then((json) => setPokemon(json.results));
+    get('https://pokeapi.co/api/v2/pokemon?offset=0&limit=10').then((json) => {
+      console.log(json);
+
+      setPokemon(json.results);
+    });
   }, []);
 
   return (
