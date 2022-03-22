@@ -9,7 +9,10 @@ $main-background-color: #E8302F;
 }
 
 body{
-    background-color: $main-color;
+    background-size: 30px 30px;
+    background-image:
+        linear-gradient(to right, #A7A7A7 1px, transparent 2px),
+        linear-gradient(to bottom, #A7A7A7 1px, transparent 2px);
 }
 
 .app-container {
