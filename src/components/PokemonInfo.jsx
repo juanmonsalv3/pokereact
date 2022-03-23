@@ -9,12 +9,16 @@ const PokemonInfo = ({ name, url }) => {
   }, [name, url]);
 
   return (
-    <div>
+    <div className='pokemon-info-container'>
       {pokemonInfo && (
         <div>
-          <h1>{name}</h1>
-          <img src={pokemonInfo.sprites.front_default} alt={name} />
-          <p>{pokemonInfo.types[0].type.name}</p>
+          <img className='pokemon-image' src={pokemonInfo.sprites.front_default} alt={name} />
+          <p className='pokemon-name'>{name}</p>    
+          <ul className='pokemon-types'>
+            {pokemonInfo.types.map((type) => (
+                <li key={type.type.name}>{type.type.name}</li>
+            ))}  
+          </ul>                
         </div>
       )}
     </div>
