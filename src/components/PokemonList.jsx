@@ -8,8 +8,6 @@ const PokemonList = () => {
 
   React.useEffect(() => {
     get('https://pokeapi.co/api/v2/pokemon?offset=0&limit=10').then((json) => {
-      console.log(json);
-
       setPokemon(json.results);
     });
   }, []);
