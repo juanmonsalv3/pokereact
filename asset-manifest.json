@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/pokereact/static/css/main.07d78c4b.css",
-    "main.js": "/pokereact/static/js/main.9cfb9c6d.js",
+    "main.css": "/pokereact/static/css/main.eb6577af.css",
+    "main.js": "/pokereact/static/js/main.74b34784.js",
     "static/js/787.f1b71fb4.chunk.js": "/pokereact/static/js/787.f1b71fb4.chunk.js",
     "index.html": "/pokereact/index.html",
-    "main.07d78c4b.css.map": "/pokereact/static/css/main.07d78c4b.css.map",
-    "main.9cfb9c6d.js.map": "/pokereact/static/js/main.9cfb9c6d.js.map",
+    "main.eb6577af.css.map": "/pokereact/static/css/main.eb6577af.css.map",
+    "main.74b34784.js.map": "/pokereact/static/js/main.74b34784.js.map",
     "787.f1b71fb4.chunk.js.map": "/pokereact/static/js/787.f1b71fb4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.07d78c4b.css",
-    "static/js/main.9cfb9c6d.js"
+    "static/css/main.eb6577af.css",
+    "static/js/main.74b34784.js"
   ]
 }
