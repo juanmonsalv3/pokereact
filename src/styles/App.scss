@@ -56,8 +56,41 @@ body{
     width: 400px;
 }
 
+.pokemon-name-detail {
+    font-family: 'Amiga Forever Pro2', sans-serif;
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 120%;
+    margin: 5% 1% 0% 2%;
+    background-color: white;
+    border-left: 30px solid red;
+    border-right: 30px solid red;
+    outline: 5px solid black;
+    border-radius: 10px;
+}
+
+.pokemon-image-detail{
+    background: linear-gradient(rgba(255, 255, 255, 0.123), rgba(255, 255, 255, 0.123)), url('../../public/pokemon-center-logo.png') no-repeat;
+    background-position: 50% 50%;
+    background-size: 170px 170px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
 .pokemon-list-container {
+    padding-top: 0.3%;
+    margin-top: 0.2%;
+    max-height: 650px;
+    overflow-y: auto;
     width: calc(100% - 400px);
+    border-bottom-left-radius: 40px 20px;
+    border-bottom-right-radius: 40px 20px;
+}
+
+.pokemon-list-container::-webkit-scrollbar { 
+    width: 0 !important;
 }
 
 .pokemon-info-container {

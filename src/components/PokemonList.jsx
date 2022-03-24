@@ -7,7 +7,7 @@ const PokemonList = () => {
   const [pokemons, setPokemon] = React.useState([]);
 
   React.useEffect(() => {
-    get('https://pokeapi.co/api/v2/pokemon?offset=0&limit=10').then((json) => {
+    get('https://pokeapi.co/api/v2/pokemon?offset=0&limit=151').then((json) => {
       setPokemon(json.results);
     });
   }, []);
