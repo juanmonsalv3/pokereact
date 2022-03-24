@@ -18,7 +18,7 @@ const PokemonInfo = ({ name, url }) => {
       {pokemonInfo && (
         <div>
           <img className='pokemon-image' src={pokemonInfo.sprites.front_default} alt={name} />
-          <p className='pokemon-name'>{id + ' ' + name}</p> 
+          <p className='pokemon-name'>#{id + ' ' + name}</p> 
           <ul className='pokemon-types'>
             {pokemonInfo.types.map((type) => (
                 <li key={type.type.name}>{type.type.name}</li>
