@@ -10,17 +10,17 @@ const SelectedPokemon = ({ pokemonName = 'ditto' }) => {
   React.useEffect(() => {
     get(`https://pokeapi.co/api/v2/pokemon/${pokemonName}`)
       .then((json) => setPokemon(json));
-  }, [pokemonName, setPokemon]);
+  }, [pokemonName]);
 
   return (
-      <div className='selected-pokemon-container'>
-        {pokemon && (
-          <div>
-            <PokemonPicture pokemon={pokemon} />
-            <PokemonDetails pokemon={pokemon} />
-          </div>
-        )}
-      </div>
+    <div className='selected-pokemon-container'>
+      {pokemon && (
+        <div>
+          <PokemonPicture pokemon={pokemon} />
+          <PokemonDetails pokemon={pokemon} />
+        </div>
+      )}
+    </div>
   );
 };
 
