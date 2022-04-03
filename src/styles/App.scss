@@ -82,7 +82,7 @@ body{
 .pokemon-list-container {
     padding-top: 0.3%;
     margin-top: 0.2%;
-    max-height: 650px;
+    max-height: calc(100vh - 115px);
     overflow-y: auto;
     width: calc(100% - 400px);
     border-bottom-left-radius: 40px 20px;
@@ -100,6 +100,7 @@ body{
     border-radius: 10px;
     margin: 5px 5px 0 3px;
     overflow: hidden;
+    cursor: pointer;
 }
 
 .pokemon-name{

@@ -4,7 +4,7 @@ import PokemonDetails from './PokemonDetails';
 import PokemonPicture from './PokemonPicture';
 
 const SelectedPokemon = ({ pokemonName = 'ditto' }) => {
-
+  console.log(pokemonName)
   const [pokemon, setPokemon] = React.useState(null);
 
   React.useEffect(() => {
