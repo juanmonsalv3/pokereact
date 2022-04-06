@@ -1,15 +1,16 @@
 {
   "files": {
-    "main.css": "/pokereact/static/css/main.eb6577af.css",
-    "main.js": "/pokereact/static/js/main.74b34784.js",
+    "main.css": "/pokereact/static/css/main.03482f2a.css",
+    "main.js": "/pokereact/static/js/main.8258136c.js",
     "static/js/787.f1b71fb4.chunk.js": "/pokereact/static/js/787.f1b71fb4.chunk.js",
+    "static/media/pokemon-center-logo.png": "/pokereact/static/media/pokemon-center-logo.6c3e4434ecb44a04c8c4.png",
     "index.html": "/pokereact/index.html",
-    "main.eb6577af.css.map": "/pokereact/static/css/main.eb6577af.css.map",
-    "main.74b34784.js.map": "/pokereact/static/js/main.74b34784.js.map",
+    "main.03482f2a.css.map": "/pokereact/static/css/main.03482f2a.css.map",
+    "main.8258136c.js.map": "/pokereact/static/js/main.8258136c.js.map",
     "787.f1b71fb4.chunk.js.map": "/pokereact/static/js/787.f1b71fb4.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.eb6577af.css",
-    "static/js/main.74b34784.js"
+    "static/css/main.03482f2a.css",
+    "static/js/main.8258136c.js"
   ]
 }
