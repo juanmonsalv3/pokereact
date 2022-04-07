@@ -1,3 +1,6 @@
-import { createContext } from "react";
+import { createContext } from 'react';
 
-export const PokemonContext = createContext({});
+export const PokemonContext = createContext({
+  pokemonList: [],
+  selectedPokemon: null,
+});
