@@ -1,16 +1,10 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { PokemonContext } from '../Contexts/PokemonContext';
 import PokemonInfo from './PokemonInfo';
 
-import { get } from '../api';
-
 const PokemonList = () => {
-  const [pokemons, setPokemon] = React.useState([]);
-
-  React.useEffect(() => {
-    get('https://pokeapi.co/api/v2/pokemon?offset=0&limit=151').then((json) => {
-      setPokemon(json.results);
-    });
-  }, []);
+  const context = useContext(PokemonContext);
+  const pokemons = context.pokemonList;
 
   return (
     <div className='pokemon-list-container'>

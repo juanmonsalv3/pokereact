@@ -7,9 +7,12 @@ const SelectedPokemon = ({ pokemonName = 'ditto' }) => {
   const [pokemon, setPokemon] = React.useState(null);
 
   React.useEffect(() => {
-    get(`https://pokeapi.co/api/v2/pokemon/${pokemonName}`)
-      .then((json) => setPokemon(json));
-  }, [pokemonName]);
+    if (pokemonName) {
+      get(`https://pokeapi.co/api/v2/pokemon/${pokemonName}`).then((json) =>
+        setPokemon(json)
+      );
+    }
+  }, [pokemonName, setPokemon]);
 
   return (
     <div className='selected-pokemon-container'>
