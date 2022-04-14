@@ -4,6 +4,7 @@ import PokemonList from './PokemonList';
 import SelectedPokemon from './SelectedPokemon';
 import { PokemonContext } from '../Contexts/PokemonContext';
 import { get } from '../api';
+import Filters from './Filters';
 
 function App() {
   const [pokemons, setPokemon] = React.useState([]);
@@ -18,12 +19,12 @@ function App() {
 
   return (
     <PokemonContext.Provider
-      value={{ pokemonList: pokemons, selectedPokemon: selectedPokemon, setSelectedPokemon }}
-    >
+      value={{ pokemonList: pokemons, selectedPokemon: selectedPokemon, setSelectedPokemon }}>
       <div className='app-container'>
         <div className='app-header'>
           <h1 className='title'> Pokedex </h1>
         </div>
+        <Filters />
         <SelectedPokemon pokemonName={!!selectedPokemon ? selectedPokemon.name : null} />
         <PokemonList />
       </div>
