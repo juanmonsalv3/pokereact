@@ -5,6 +5,7 @@ import SelectedPokemon from './SelectedPokemon';
 import { PokemonContext } from '../Contexts/PokemonContext';
 import { get } from '../api';
 import Filters from './Filters';
+import Footer from './Footer';
 
 function App() {
   const [pokemons, setPokemon] = React.useState([]);
@@ -27,6 +28,7 @@ function App() {
         <Filters />
         <SelectedPokemon pokemonName={!!selectedPokemon ? selectedPokemon.name : null} />
         <PokemonList />
+        <Footer />
       </div>
     </PokemonContext.Provider>
   );
