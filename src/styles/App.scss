@@ -146,3 +146,22 @@ body{
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: #3663AC;
 }
+
+.app-footer {
+    position: fixed; 
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    font-size: 1.5rem;
+    font-family: 'Pokemon Solid';
+    color: rgb(238, 42, 42);
+    -webkit-text-fill-color: #FFCB03; /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #3663AC;
+    text-align: center;
+    margin: auto;
+    vertical-align: middle;
+    background: $main-background-color;
+    background: linear-gradient(0deg, rgba(40,40,40,1) 0%, rgba($main-background-color,1) 50%);
+}
